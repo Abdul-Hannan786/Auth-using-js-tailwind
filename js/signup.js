@@ -36,7 +36,7 @@ function toggle() {
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
 
-    window.location = "./login.html";
+    window.location.href = "login.html"
   }
 }
 

@@ -63,6 +63,7 @@
         class="bg-sky-600 hover:opacity-90 w-full rounded-md p-2 text-white text-lg font-semibold mt-3"
         onclick="login()"
       >
+      
         Login
       </button> 
       <div class="mt-2">
@@ -78,7 +79,20 @@
           <i class="ri-close-large-fill text-xl" onclick="cancelErr()"></i>
         </button>
         <p class="text-red-600 font-semibold text-lg mb-5 mt-7 text-center">
-          Please enter all the field
+          Please enter all the fields
+        </p>
+      </div>
+    </div>
+
+
+  <div class="dummy-invalid 1 h-[100vh] hidden w-full bg-black opacity-30 top-0 transition"></div>
+    <div class="invalid-email-password hidden flex top-[45%] left-[42%] transition">
+      <div class="p-2 relative rounded-lg transition shadow-2xl bg-white w-[20vw]">
+        <button class="absolute top-[10px] right-[10px] rounded-full hover:bg-sky-100 w-7 h-auto ">
+          <i class="ri-close-large-fill text-xl" onclick="cancelInvalid()"></i>
+        </button>
+        <p class="text-red-600 font-semibold text-lg mb-5 mt-7 text-center">
+          Invalid email or password
         </p>
       </div>
     </div>
