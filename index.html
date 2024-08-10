@@ -29,19 +29,21 @@
       <div class="">
         <h1 class="text-3xl font-bold">MyApp</h1>
       </div>
-      <div class="flex items-center gap-x-5 text-lg font-semibold">
+      <div class="flex items-center gap-x-5 md:text-lg text-md font-semibold">
         <h3 class="hover:opacity-80 cursor-pointer">Home</h3>
         <h3 class="hover:opacity-80 cursor-pointer">Contact</h3>
         <h3 class="hover:opacity-80 cursor-pointer">Services</h3>
       </div>
     </nav>
 
+
+ 
     <section
       class="w-full flex items-center justify-center bg-sky-100"
       style="height: calc(100vh - 76px)"
     >
       <div
-        class="flex flex-col items-center justify-center gap-y-1 bg-white p-14 rounded-3xl shadow-2xl"
+      class="flex flex-col items-center justify-center gap-y-1 bg-white  md:p-14 p-11 2xl:p-16 rounded-3xl shadow-2xl"
       >
         <label for="name"></label>
         <input
@@ -77,18 +79,21 @@
       </div>
     </section>
 
-    <div class="dummy h-[100vh] hidden w-full bg-black opacity-30 top-0 transition"></div>
-    <div class="error hidden flex top-[45%] left-[42%] transition">
-      <div class="p-2 relative rounded-lg transition shadow-2xl bg-white w-[20vw]">
+    
+    <div class="dummy h-[100vh] hidden w-full bg-black opacity-30 top-0"></div>
+    <div class="error hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div class="p-2 relative rounded-lg transition shadow-2xl bg-white w-[75vw] sm:w-[35vw] lg:w-[25vw] 2xl:w-[20vw]">
         <button class="absolute top-[10px] right-[10px] rounded-full hover:bg-sky-100 w-7 h-auto ">
           <i class="ri-close-large-fill text-xl" onclick="cancelErr()"></i>
         </button>
-        <p class="text-red-600 font-semibold text-lg mb-5 mt-7 text-center">
+        <p class="text-red-600 font-semibold text-lg mb-4 mt-5 text-center">
           Please enter all the field
         </p>
       </div>
     </div>
 
+
     <script src="js/signup.js"></script>
   </body>
 </html>
+ 

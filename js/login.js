@@ -26,9 +26,10 @@ function toggle() {
     let users = localStorage.getItem("users");
     users = JSON.parse(users);
 
-    let [loggedInUser] = users.filter(({email, password}) => (
-      email === emailInput && password === passwordInput
-    ))
+    let [loggedInUser] = users.filter(
+      ({ email, password }) =>
+        email === emailInput && password === passwordInput
+    );
 
     if (!loggedInUser) {
       invalidEmailPassword.classList.remove("hidden");
@@ -36,8 +37,8 @@ function toggle() {
       invalidEmailPassword.classList.add("fixed");
       dummy01.classList.add("fixed");
     } else {
-          localStorage.setItem("loggedInUsername", loggedInUser.name) 
-          window.location.href = "post.html"
+      localStorage.setItem("loggedInUsername", loggedInUser.name);
+      window.location.href = "post.html";
     }
   }
 }

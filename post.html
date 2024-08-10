@@ -48,13 +48,13 @@
 
     <section class="">
       <div class="post grid grid-cols-3 gap-5 p-4">
-        
+         
       </div>
     </section>
 
     <button
       onclick="createPosts()"
-      class="bg-sky-600 text-white text-xl font-semibold rounded-md p-2.5 fixed bottom-6 right-4 flex items-center justify-center gap-x-1"
+      class="bg-sky-600 text-white text-xl font-semibold rounded-md p-2.5 fixed bottom-6 right-4 flex items-center justify-center gap-x-1 hover:opacity-90"
     >
       <i class="ri-add-fill text-xl"></i> Create Post
     </button>
@@ -83,12 +83,12 @@
     </div>
 
     <div class="dummy h-[100vh] hidden w-full bg-black opacity-30 top-0 transition"></div>
-    <div class="error hidden flex top-[45%] left-[42%] transition">
-      <div class="p-2 relative rounded-lg transition shadow-2xl bg-white w-[20vw]">
+    <div class="error hidden flex top-[45%] left-[37%] transition">
+      <div class="p-2 relative rounded-lg transition shadow-2xl bg-white w-[25vw]">
         <button class="absolute top-[10px] right-[10px] rounded-full hover:bg-sky-100 w-7 h-auto ">
           <i class="ri-close-large-fill text-xl" onclick="cancelInvallidError()"></i>
         </button>
-        <p class="text-red-600 font-semibold text-lg mb-5 mt-7 text-center">
+        <p class="text-red-600 font-semibold text-lg mb-4 mt-5 text-center">
           Post cannot be empty
         </p>
       </div>

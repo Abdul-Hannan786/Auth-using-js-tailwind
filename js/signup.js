@@ -25,8 +25,7 @@ function toggle() {
     dummy.classList.remove("hidden");
     error.classList.add("fixed");
     dummy.classList.add("fixed");
-  } 
-  else {
+  } else {
     let users = JSON.parse(localStorage.getItem("users")) || [];
     let newUser = {
       name: nameInput,
@@ -36,7 +35,7 @@ function toggle() {
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
 
-    window.location.href = "login.html"
+    window.location.href = "login.html";
   }
 }
 

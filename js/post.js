@@ -49,6 +49,7 @@ function toggle() {
 
     document.querySelector("#post-id").value = "";
     cancelErr();
+    post.classList.add("bg-sky-100");
   } else {
     error.classList.remove("hidden");
     dummy.classList.remove("hidden");
@@ -64,8 +65,8 @@ function cancelInvallidError() {
   dummy.classList.add("hidden");
 }
 
+const post = document.querySelector(".post");
 function renderPosts() {
-  const post = document.querySelector(".post");
   post.innerHTML = "";
 
   const loggedInUsername = localStorage.getItem("loggedInUsername");
@@ -101,7 +102,6 @@ function renderPosts() {
     });
 
     post.innerHTML = clutter;
-    post.classList.add("bg-sky-100");
   }
 }
 
